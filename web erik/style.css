@@ -1,0 +1,143 @@
+* {
+   padding: 0;
+   margin: 0;
+}
+ 
+body {
+   color: #544738;
+   font-family: helvetica, sans-serif;
+}
+
+.menu-children {
+  display: none;
+  list-style: none;
+  width: auto;
+}
+
+.menu-item-has-children:hover .menu-children {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+}
+
+ul li {
+ float: left;
+ list-style: none;
+ margin-right: 1em; 
+}
+ 
+.list {
+ color: #544738;
+ text-decoration: none;
+ float: left;
+ font-size: 50px;
+ padding: 12px;
+}
+ 
+#erik{
+  color: #544738;
+ text-decoration: none;
+ float: left;
+ font-size: 5em;
+ padding: 12px;
+}
+
+#erik:hover {
+  display: none;
+}
+
+img{
+ width: 50%;
+ margin: auto;
+}
+
+.pic-ctn {
+  width: 50vw;
+  height: 200px;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+   30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  40% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 0;
+  } 
+}
+
+.pic-ctn {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  margin-top: 15vh;
+}
+
+.pic-ctn > img {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 100px);
+  opacity: 0;
+  animation: display 38s infinite;
+}
+
+img:nth-child(2) {
+  animation-delay: 4s;
+}
+img:nth-child(3) {
+  animation-delay: 8s;
+}
+img:nth-child(4) {
+  animation-delay: 12s;
+}
+img:nth-child(5) {
+  animation-delay: 16s;
+}
+img:nth-child(6) {
+  animation-delay: 20s;
+}
+img:nth-child(7) {
+  animation-delay: 24s;
+}
+img:nth-child(8) {
+  animation-delay: 28s;
+}
+img:nth-child(9) {
+  animation-delay: 32s;
+}
+img:nth-child(10) {
+  animation-delay: 36s;
+}
